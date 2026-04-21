@@ -1,0 +1,56 @@
+import 'package:flutter/material.dart';
+
+import 'constants.dart';
+
+class AppTheme {
+  static ThemeData lightTheme(BuildContext context) {
+    return ThemeData(
+      scaffoldBackgroundColor: Colors.white,
+      fontFamily: "Muli",
+      appBarTheme: const AppBarTheme(
+          color: Colors.white,
+          elevation: 0,
+          iconTheme: IconThemeData(color: Colors.black),
+          titleTextStyle: TextStyle(color: Colors.black)),
+      textTheme: const TextTheme(
+        bodyLarge: TextStyle(color: kTextColor),
+        bodyMedium: TextStyle(color: kTextColor),
+        bodySmall: TextStyle(color: kTextColor),
+      ),
+      inputDecorationTheme: const InputDecorationTheme(
+        floatingLabelBehavior: FloatingLabelBehavior.always,
+        contentPadding: EdgeInsets.symmetric(horizontal: 24, vertical: 20),
+        enabledBorder: outlineInputBorder,
+        focusedBorder: focusedInputBorder,
+        border: outlineInputBorder,
+        fillColor: Color(0xFFF5F6F9),
+        filled: true,
+      ),
+      visualDensity: VisualDensity.adaptivePlatformDensity,
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          elevation: 0,
+          backgroundColor: kPrimaryColor,
+          foregroundColor: Colors.white,
+          minimumSize: const Size(double.infinity, 56),
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(20)),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+const OutlineInputBorder outlineInputBorder = OutlineInputBorder(
+  borderRadius: BorderRadius.all(Radius.circular(15)),
+  borderSide: BorderSide(color: Color(0xFFE0E0E0)),
+  gapPadding: 10,
+);
+
+const OutlineInputBorder focusedInputBorder = OutlineInputBorder(
+  borderRadius: BorderRadius.all(Radius.circular(15)),
+  borderSide: BorderSide(color: kPrimaryColor),
+  gapPadding: 10,
+);
+
