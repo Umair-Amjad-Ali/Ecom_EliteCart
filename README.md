@@ -69,20 +69,6 @@ Follow these steps to get the project running locally on your machine:
 
 ---
 
-## 📸 UI Showcase
-
-EliteCart boasts a premium aesthetic with over 17+ dedicated screens:
-
-| Splash & Onboarding | Home & Categories | Product Details |
-|:---:|:---:|:---:|
-| ![Splash](1.png) | ![Home](2.png) | ![Details](3.png) |
-
-| Cart & Checkout | User Profile | Auth Flow |
-|:---:|:---:|:---:|
-| ![Cart](4.png) | ![Profile](5.png) | ![Auth](6.png) |
-
----
-
 ## 🏗️ Project Structure
 
 The project follows a modular and clean Flutter architecture:
